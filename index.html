@@ -231,10 +231,10 @@
         <div class="row gy-4">
           <div class="col-lg-4">
             <div class="services-list">
-              <a href="javascript:void(0);" id="omantel" class="active">OmanTel</a>
-              <a href="javascript:void(0);" id="caseStudy2">CaseStudy 2</a>
+              <a href="javascript:void(0);" id="omantel">OmanTel</a>
+              <a href="javascript:void(0);" id="CLP">CLP</a>
             </div>
-            <p>OKR coach: <span>Name</span></p>
+            <p>OKR Coach: <span>Name</span></p>
           </div>
 
 
@@ -306,9 +306,9 @@
             solutions: 'Conducting the OKR Practitioner Course for key team in the OKR system',
             outcomesTitle: 'Team Leads learnt how to:',
             outcomes: [
-                'Effectively align teams from OKR to the strategy management level',
-                'Conduct weekly check-ins to get the stickiness to the OKR system',
-                'Adjust the OKR system to Omantel company and country culture'
+                '- Effectively align teams from OKR to the strategy management level',
+                '- Conduct weekly check-ins to get the stickiness to the OKR system',
+                '- Adjust the OKR system to Omantel company and country culture'
             ],
             images: [
                 // 'https://via.placeholder.com/150',
@@ -317,25 +317,29 @@
             website: 'https://www.omantel.om',
             employees: 300,
             industry: 'Telecommunication',
-            okrCoach: 'John Doe'
+            okrCoach: 'Dirk Schmellenkamp'
         },
-        'caseStudy2': {
-            title: 'CaseStudy 2: Health Sector',
-            challenges: ['Challenge A', 'Challenge B'],
-            solutions: 'Adopted new health protocols.',
-            outcomesTitle: 'Healthcare staff achieved:',
+        'CLP': {
+            title: 'CLP',
+            challenges: ['Setting up OKR Cycles for their product teams and aligning them to the team and company strategies'],
+            solutions: 'Conducting the OKR Practitioner Courses and conducting weekly check-ins.',
+            outcomesTitle: 'Product Managers, Team leads, Scrum Masters:',
             outcomes: [
-                'Improved patient satisfaction by 25%',
-                'Reduced waiting time by 30%'
+                '- Effectively draft OKRs for functional and squad team',
+                '- Aligning OKRs with other agile methodologies, i.e. scrum, kanban',
+                '- Aligning OKRs on a horizontal and vertical level',
+                '- Linking OKRs to an effective incentive program',
+                '- Aligning OKRs with other agile methodologies, i.e. scrum, kanban',
+                '- Getting buy-ins form team members'
             ],
             images: [
                 // 'https://via.placeholder.com/170',
                 // 'https://via.placeholder.com/180'
             ],
-            website: 'https://www.health.example.com',
+            website: 'https://www.CLP.com',
             employees: 150,
-            industry: 'Healthcare',
-            okrCoach: 'John Doev'
+            industry: 'CLP',
+            okrCoach: 'Dirk Schmellenkamp'
         }
         // ... more case study objects
     };
@@ -374,7 +378,7 @@
 
     // Add event listeners
     addEventListenerToCaseStudy('omantel');
-    addEventListenerToCaseStudy('caseStudy2');
+    addEventListenerToCaseStudy('CLP');
 
     // Initialize content
     document.getElementById('omantel').click();
