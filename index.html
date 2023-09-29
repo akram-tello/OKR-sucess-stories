@@ -23,7 +23,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -40,6 +40,162 @@
 .breadcrumbs .page-header:before{
   background: linear-gradient(45deg,rgb(52,168,83) 0%,rgb(124,187,0) 95%);
 }
+
+.img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+/*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+.case-study .services-list {
+  padding: 10px 30px;
+  border: 1px solid #d3dff3;
+  margin-bottom: 20px;
+}
+
+.case-study .services-list a {
+  display: block;
+  line-height: 1;
+  padding: 8px 0 8px 15px;
+  border-left: 3px solid #c2cbdf;
+  margin: 20px 0;
+  color: var(--color-secondary);
+  transition: 0.3s;
+}
+
+.case-study .services-list a.active {
+  font-weight: 700;
+  border-color: var(--color-primary);
+}
+
+.case-study .services-list a:hover {
+  border-color: var(--color-primary);
+}
+
+.case-study .services-img {
+  margin-bottom: 20px;
+}
+
+.case-study h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.case-study h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.case-study p {
+  font-size: 15px;
+}
+
+.case-study ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.case-study ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.case-study ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--color-primary);
+}
+    .case-study {
+  padding-top: 20px;
+}
+
+.case-study .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  transition: ease-in-out 0.3s;
+}
+
+.case-study .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.case-study .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.case-study .icon-box h3 a {
+  color: #493c3e;
+  transition: ease-in-out 0.3s;
+}
+
+.case-study .icon-box:hover a {
+  color: #e43c5c;
+}
+
+.list{
+  box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+}
+
+.badge {
+  background: #2b2b2b59;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.box{
+  padding: 20px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    margin-bottom: 30px;
+}
+
+  .entry-meta {
+  margin-bottom: 15px;
+  color: #b1a0a3;
+}
+
+  .entry-meta ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+  .entry-meta ul li+li {
+  padding-left: 20px;
+}
+
+  .entry-meta i {
+  font-size: 16px;
+  margin-right: 8px;
+  line-height: 0;
+}
+
+  .entry-meta a {
+  color: #777777;
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+}
 </style>
 <body>
 
@@ -53,8 +209,7 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>Dotzero</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h2>Case Studies</h2>
             </div>
           </div>
         </div>
@@ -63,63 +218,75 @@
         <div class="container">
           <ol>
             <li><a href="#">OKRs in Realtime</a></li>
-            <li>Dotzero</li>
+            <li class="dynamicTitle">Title</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= Service Details Section ======= -->
-    <section id="service-details" class="service-details">
-      <div class="container" data-aos="fade-up">
+    <section id="case-study" class="case-study">
+      <div class="container">
 
         <div class="row gy-4">
-
           <div class="col-lg-4">
-            <img src="https://akram-tello.github.io/OKR-sucess-stories/aIoHJPYE91WFe6k5bnY4Fp1nHfnS7AZUqnLZNwsT.jpg" alt="" class="img-fluid services-img rounded">
             <div class="services-list">
-              <a href="#" class="active">The Champion</a>
-              <a href="#">The Challenges</a>
-              <a href="#">The Solutions</a>
-              <a href="#">The Outcomes</a>
+              <a href="javascript:void(0);" id="omantel" class="active">OmanTel</a>
+              <a href="javascript:void(0);" id="caseStudy2">CaseStudy 2</a>
             </div>
-
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+            <p>OKR coach: <span>Name</span></p>
           </div>
+
 
           <div class="col-lg-8">
-            <div class="text-center">
-              <img src="https://akram-tello.github.io/OKR-sucess-stories/ti37lzykugEK8CZAWwqtKIdZW8q8b8s4W3hLf8zU.png" alt="" class="img-fluid services-img" width="50%">
+            <div id="dynamicImages" class="d-flex justify-content-around">
+              <!-- Images will go here -->
             </div>
-            <h3>The Champion: Dotzero, Singapore</h3>
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <h4>The Challenges:</h4>
-            <p>
-              Misalignment of teams vertically and horizontally
-            </p>
-            <h4>The Solutions:</h4>
-            <p>
-              OKR Practitioner Course for involved teams and Leadership Course for department and teams heads to increase
-levels of alignment and engagement.
-            </p>
-            <h4>The Outcomes:</h4>
-            <p>"OKRs have helped my company stay on track and have awareness on what's truly important.
-              We are able to push our operations to be more efficient in customer service and operations. And what's
-              amazing is that these 2 departments are now able to gel and work together much better due to the shared
-              OKRs."</p>
+
+            <h3 class="badge dynamicTitle">Title</h3>
+            
+            <div class="entry-meta">
+              <ul>
+                <li id="dynamicWebsite" class="d-flex align-items-center"><i class="bi bi-globe-americas"></i> <a href="">website</a></li>
+                <li class="d-flex align-items-center"><i class="bi bi-person"></i>#</li>
+                <li class="d-flex align-items-center"><i class="bi bi-building"></i>industry</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <div class="icon-box">
+                <i class="ri-flag-2-line" style="color: #ffbb2c;"></i>
+                <h3><a href="">Challenges:</a></h3>
+              </div>
+              <p id="dynamicChallenges">
+                <!-- Challenges will go here -->
+              </p>
+
+              <div class="icon-box">
+                <i class="ri-magic-line" style="color: #ffbb2c;"></i>
+                <h3><a href="">Solutions:</a></h3>
+              </div>
+
+              <p id="dynamicSolutions">
+                <!-- Challenges will go here -->
+              </p>
+            </div>
+
+            <div class="icon-box">
+              <i class="ri-line-chart-line" style="color: #ffbb2c;"></i>
+              <h3><a href="">Outcomes:</a></h3>
+            </div>
+            <div class="box">
+              <p id="dynamicOutcomes">
+                <!-- Challenges will go here -->
+              </p>
+            </div>
 
           </div>
-
         </div>
 
       </div>
-    </section><!-- End Service Details Section -->
+    </section>
 
   </main><!-- End #main -->
 
@@ -129,6 +296,92 @@ levels of alignment and engagement.
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+
+  <script>
+    // Object to store case study data
+    const caseStudies = {
+        'omantel': {
+            title: 'Omantel',
+            challenges: ['Adjusting the OKR system to the culture of Omantel to have an effective execution goal framework'],
+            solutions: 'Conducting the OKR Practitioner Course for key team in the OKR system',
+            outcomesTitle: 'Team Leads learnt how to:',
+            outcomes: [
+                'Effectively align teams from OKR to the strategy management level',
+                'Conduct weekly check-ins to get the stickiness to the OKR system',
+                'Adjust the OKR system to Omantel company and country culture'
+            ],
+            images: [
+                // 'https://via.placeholder.com/150',
+                // 'https://via.placeholder.com/160'
+            ],
+            website: 'https://www.omantel.om',
+            employees: 300,
+            industry: 'Telecommunication',
+            okrCoach: 'John Doe'
+        },
+        'caseStudy2': {
+            title: 'CaseStudy 2: Health Sector',
+            challenges: ['Challenge A', 'Challenge B'],
+            solutions: 'Adopted new health protocols.',
+            outcomesTitle: 'Healthcare staff achieved:',
+            outcomes: [
+                'Improved patient satisfaction by 25%',
+                'Reduced waiting time by 30%'
+            ],
+            images: [
+                // 'https://via.placeholder.com/170',
+                // 'https://via.placeholder.com/180'
+            ],
+            website: 'https://www.health.example.com',
+            employees: 150,
+            industry: 'Healthcare',
+            okrCoach: 'John Doev'
+        }
+        // ... more case study objects
+    };
+
+    // Function to add event listener to case study links
+    function addEventListenerToCaseStudy(caseStudyId) {
+        document.getElementById(caseStudyId).addEventListener('click', function() {
+            const caseStudy = caseStudies[caseStudyId];
+            updateContent(caseStudy);
+        });
+    }
+
+    // Function to update the content
+    function updateContent(caseStudy) {
+        const dynamicTitles = document.getElementsByClassName('dynamicTitle');
+        for (let i = 0; i < dynamicTitles.length; i++) {
+            dynamicTitles[i].innerHTML = caseStudy.title;
+        }
+
+        const imageHTML = caseStudy.images.map(img => `<img src="${img}" alt="" class="img-fluid" width="30%">`).join('');
+        document.getElementById('dynamicImages').innerHTML = imageHTML;
+
+        document.getElementById('dynamicChallenges').textContent = caseStudy.challenges.join(', ');
+        document.getElementById('dynamicSolutions').textContent = caseStudy.solutions;
+
+        const outcomesList = caseStudy.outcomes.map(outcome => `<li>${outcome}</li>`).join('');
+        document.getElementById('dynamicOutcomes').innerHTML = 
+            `${caseStudy.outcomesTitle}<ul style="list-style-type: disc; padding-left: 20px;">${outcomesList}</ul>`;
+        
+        document.getElementById('dynamicWebsite').innerHTML = `<i class="bi bi-globe-americas"></i> <a href="${caseStudy.website}">website</a>`;
+        document.querySelector('.entry-meta li:nth-child(2)').innerHTML = `<i class="bi bi-person"></i>${caseStudy.employees}`;
+        document.querySelector('.entry-meta li:nth-child(3)').innerHTML = `<i class="bi bi-building"></i>${caseStudy.industry}`;
+
+        document.querySelector('.col-lg-4 p span').textContent = caseStudy.okrCoach;
+    }
+
+    // Add event listeners
+    addEventListenerToCaseStudy('omantel');
+    addEventListenerToCaseStudy('caseStudy2');
+
+    // Initialize content
+    document.getElementById('omantel').click();
+</script>
+
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
